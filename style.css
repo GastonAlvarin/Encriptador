@@ -4,8 +4,6 @@ body{
 
 .logoAlura{
     position: absolute;
-    width: 31.09px;
-    height: 48px;
     margin: 20px 0px 0px 20px ;
 }
 
@@ -39,9 +37,10 @@ body{
     width: 350px;
     height: 550px;
     background: #ffffff;
-    margin: 20px 20px 0px;
+    margin: 15px 20px 0px;
     border-radius: 32px;
     padding: 20px;
+    box-shadow: 5px 7px 20px 3px #000000;
 }
 
 .rectangulo textarea{
@@ -85,13 +84,29 @@ body{
 /* FIN Traduccion*/
 /* botones encriptar - desencriptar */
 
+.textoSobreBoton{
+    position: absolute;
+    left: 35%;
+    bottom: 11%;
+}
+
+.textoSobreBoton img{
+    display:inline;
+}
+
+.textoSobreBoton p{
+    display:inline;
+    font-style:italic;
+}
+
 .botonesEnDes{
     text-align: center;
     position: absolute;
-    top: 565px;
-    left: 240px;
+    bottom: 3%;
+    left: 18%;
     width: 700px;
     height: auto;
+
 }
 
 .botonesEnDes button{
@@ -101,9 +116,10 @@ body{
     width: 180px;
     padding: 7px;
     margin: 0px 5px 0px 5px;
-    border: solid 0.3px #0A3871;
+    border:  #0A3871;
     border-radius: 15px;
     cursor: pointer;
+    box-shadow:  1px 1px 15px 1px #0A3871;
 }
 
 .botonesEnDes button:hover p{
@@ -112,9 +128,9 @@ body{
 
 .botonesEnDes button:first-child{
     background: #0A3871 ;
-    border: none;
     cursor: pointer;
     color: #ffffff;
+    box-shadow: 1px 1px 15px 1px #0A3871;
 }
 
 .boton_aparte{
@@ -138,11 +154,9 @@ body{
     transform: scale(1.1);
 }
 
-
-
 .copyright{
     position: absolute;
-    bottom: 0%;
+    bottom: 0.5%;
     font-size: 13px;
     color:#020344c4;
     font-style: italic;

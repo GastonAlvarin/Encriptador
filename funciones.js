@@ -29,7 +29,7 @@ function copiar(){
 }
 
 function encriptar(textoEncriptar){
-    var vocalesCambian = [["a", "ai"], ["e", "enter"], ["i", "imes"], ["o","ober"], ["u","ufat"]];
+    var vocalesCambian = [["u","ufat"], ["e", "enter"], ["i", "imes"], ["o","ober"], ["a", "ai"]];
     //                      0    1       0      1   etc
     textoEncriptar = textoEncriptar.toLowerCase();
 
@@ -43,6 +43,7 @@ function encriptar(textoEncriptar){
 
 function desEncriptar(textoEncriptar){
     var vocalesCambian = [["a", "ai"], ["e", "enter"], ["i", "imes"], ["o","ober"], ["u","ufat"]];
+    textoEncriptar = textoEncriptar.toLowerCase();
 
     for(var posicion = 0; posicion < vocalesCambian.length; posicion++){
         if(textoEncriptar.includes(vocalesCambian[posicion][1])){
